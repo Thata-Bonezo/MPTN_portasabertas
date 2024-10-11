@@ -13,7 +13,7 @@ textarea{
     resize: none;
 }
 
-/*** Spinner **
+/*** Spinner **/
 .spinner {
     width: 40px;
     height: 40px;
@@ -49,13 +49,18 @@ textarea{
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     }
 }
-*/
+
 #spinner {
     opacity: 0;
     visibility: hidden;
     transition: opacity .5s ease-out, visibility 0s linear .5s;
     z-index: 99999;
 }
+/*
+.texto {
+    text-align: justify;
+    width: 1000px;
+}*/
 
 #spinner.show {
     transition: opacity .5s ease-out, visibility 0s linear 0s;
@@ -64,7 +69,7 @@ textarea{
 }
 
 
-/*** Heading **
+/*** Heading ***/
 h1,
 h2,
 .fw-bold {
@@ -84,7 +89,7 @@ h6,
 }
 
 
-/*** Button **
+/*** Button ***/
 .btn {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
@@ -129,7 +134,7 @@ h6,
 }
 
 
-/*** Navbar ***
+/*** Navbar ****/
 .navbar-dark .navbar-nav .nav-link {
     font-family: 'Nunito', sans-serif;
     position: relative;
@@ -221,7 +226,7 @@ h6,
 }
 
 
-/*** Carousel ***
+/*** Carousel ****/
 .carousel-caption {
     top: 0;
     left: 0;
@@ -254,7 +259,7 @@ h6,
     height: 3rem;
 }
 
-/*** Section Title ***
+/*** Section Title ****/
 .section-title::before {
     position: absolute;
     content: "";
@@ -315,7 +320,7 @@ h6,
 }
 
 
-/*** Service ***
+/*** Service ****/
 .service-item {
     position: relative;
     height: 300px;
@@ -354,7 +359,7 @@ h6,
 }
 
 
-/*** Testimonial ***
+/*** Testimonial ****/
 .testimonial-carousel .owl-dots {
     margin-top: 15px;
     display: flex;
@@ -393,7 +398,7 @@ h6,
 }
 
 
-/*** Team ***
+/*** Team ****/
 .team-item {
     transition: .5s;
 }
@@ -460,7 +465,7 @@ h6,
 }
 
 
-/*** Miscellaneous ***
+/*** Miscellaneous ****/
 @media (min-width: 991.98px) {
     .facts {
         position: relative;
@@ -494,4 +499,4 @@ h6,
     .footer-about {
         margin-bottom: -75px;
     }
-}*/
+}
