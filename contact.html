@@ -12,9 +12,34 @@
     <meta name="author" content="Mariana, Nataly, Paulo e Thamires">
     <link rel="icon" type="image/jpg" href="img/a.jpg">
     <script language="javascript" type="text/javascript">
-          function valida() {
+          function validar() {
+            var vnome = form1.nome.value;
+            var vemail = form1.email.value;
+            var vassunto = form1.assunto.value;
+            var vnota = form1.nota.value;
+            
+            if (vnome==""){
+                alert ("Preencha o campo vazio com seu nome");
+                form1.nome.focus();
+                return false;
+            }
+            if (vemail==""){
+                alert ("Preencha o campo vazio com seu email");
+                form1.email.focus();
+                return false;
+            }
+            if (vassunto==""){
+                alert ("Preencha o campo vazio com o assunto");
+                form1.assunto.focus();
+                return false;
+            }
+            if (vnota==""){
+                alert ("Preencha o campo vazio com uma nota");
+                return false;
+            }
             alert("Dados enviados com sucesso!");
-               form.reset();
+            form1.reset();
+           
     }
     </script>
     <!-- Favicon -->
@@ -145,19 +170,19 @@
             
             <div class="row g-5 align-items-center justify-content-center ">
                 <div class="col-lg-6 wow slideInUp text-center" data-wow-delay="0.3s">
-                    <form>
+                    <form name="form1" method="get">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light px-4" required=" " placeholder="Seu nome" style="height: 40px;">
+                                <input type="text" name="nome" class="form-control border-0 bg-light px-4" placeholder="Seu nome" style="height: 40px;">
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control border-0 bg-light px-4" required=" " placeholder="Seu Email" style="height: 40px;">
+                                <input type="email" name="email" class="form-control border-0 bg-light px-4"  placeholder="Seu Email" style="height: 40px;">
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Assunto" style="height: 40px;">
+                                <input type="text" name="assunto" class="form-control border-0 bg-light px-4" placeholder="Assunto" style="height: 40px;">
                             </div>
                             <div class="col-12">
-                                <select  class="form-control border-0 bg-light px-4"  required=" " style="height: 40px;">
+                                <select  class="form-control border-0 bg-light px-4"  style="height: 40px;" name="nota">
                                     <option value="">Nota para o site</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -175,7 +200,7 @@
                                 <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Mensagem"></textarea>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit" onclick="return valida()">Enviar</button>
+                                <button class="btn btn-primary w-100 py-3" type="submit" onclick="return validar()">Enviar</button>
                             </div>
                         </div>
                     </form>
