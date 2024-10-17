@@ -11,7 +11,12 @@
           content="Profissional, TI, áreas, contate-nos, fale conosco">
     <meta name="author" content="Mariana, Nataly, Paulo e Thamires">
     <link rel="icon" type="image/jpg" href="img/a.jpg">
-
+    <script language="javascript" type="text/javascript">
+          function valida() {
+            alert("Dados enviados com sucesso!");
+               form.reset();
+    }
+    </script>
     <!-- Favicon -->
 
     <!-- Google Web Fonts -->
@@ -131,15 +136,15 @@
 
 
     <!-- Contact Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-fluid py-5 wow fadeInUp " data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
                 <h5 class="fw-bold text-primary text-uppercase">Tem alguma dúvida?</h5>
                 <h1 class="mb-0">Entre em contato!</h1>
             </div>
             
-            <div class="row g-5">
-                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
+            <div class="row g-5 align-items-center justify-content-center ">
+                <div class="col-lg-6 wow slideInUp text-center" data-wow-delay="0.3s">
                     <form>
                         <div class="row g-3">
                             <div class="col-md-6">
@@ -170,7 +175,7 @@
                                 <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Mensagem"></textarea>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+                                <button class="btn btn-primary w-100 py-3" type="submit" onclick="return valida()">Enviar</button>
                             </div>
                         </div>
                     </form>
